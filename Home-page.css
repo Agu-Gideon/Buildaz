@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  font-family: "Nokora", serif;
+}
+:root {
+  --primary-color: #e54614;
+  --secondary-color: #000000;
+}
+/* Home */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 70%,
+        rgba(0, 0, 0, 0)
+      )
+      30%,
+    url(./Images/img\(1\).png);
+}
+.wrapper {
+  width: 90%;
+  height: 100%;
+}
+/* header style starts here  */
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
