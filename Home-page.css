@@ -1,10 +1,12 @@
 * {
   margin: 0;
   font-family: "Nokora", serif;
+  /* color: white; */
 }
 :root {
   --primary-color: #e54614;
   --secondary-color: #000000;
+  --color: white;
 }
 /* Home */
 
@@ -19,17 +21,161 @@
         rgba(0, 0, 0, 0)
       )
       30%,
-    url(./Images/img\(1\).png);
+    url(./Images/img\(1\).png) no-repeat center / cover;
 }
 .wrapper {
   width: 90%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 /* header style starts here  */
 .header {
   width: 100%;
-  height: 10%;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo {
+  width: 175px;
+  height: 34px;
+}
+.nav {
+  width: 474px;
+  height: 64px;
+  background-color: var(--color);
+  border-bottom-left-radius: 96px;
+  border-bottom-right-radius: 96px;
+  position: absolute;
+  top: 0;
+  margin-left: 22.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links {
+  display: flex;
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.8px;
+  width: 324px;
+  height: 9px;
+  gap: 24px;
+}
+.nav-links p:hover {
+  color: var(--primary-color);
+}
+.nav-link-active {
+  color: var(--primary-color);
+}
+.contact-info {
+  width: 168px;
+  height: 43px;
+  border-radius: 21.5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact {
+  width: 133px;
+  height: 33px;
+  border-radius: 16.5px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 15.86px;
+  font-weight: 700;
+  color: white;
+}
+.right-arrow {
+  width: 9px;
+  height: 10px;
+  color: black;
+  margin-right: 10px;
+}
+/* header style end  */
+/* hero style start  */
+
+.heroContent {
+  width: 619px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 6em;
+}
+.heroContent h1 {
+  width: 500px;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 69px;
+  color: var(--color);
+}
+.heroContent p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31.72px;
+  color: var(--color);
+}
+/* to edit the contact button */
+.contact-info2 {
+  background-color: var(--secondary-color);
+  width: 266px;
+  height: 80px;
+  border-radius: 44.07px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+.contact2 {
+  background-color: var(--primary-color);
+  width: 228px;
+  height: 58px;
+  border-radius: 35.5px;
+  font-size: 1rem;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 15.86px;
+  font-weight: 700;
+  color: white;
+}
+.material-symbols-outlined {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+/* for the slider idicator */
+.slider {
+  width: 474px;
+  height: 64px;
+  background-color: var(--color);
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 23.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.slide-content {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: grey;
+  transition: all 0.3s ease;
+}
+.slide-active {
+  background-color: var(--secondary-color);
+  width: 50px;
+  border-radius: 19%;
 }
