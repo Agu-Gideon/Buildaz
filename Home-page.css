@@ -28,6 +28,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  /* background-color: royalblue; */
 }
 /* header style starts here  */
 .header {
@@ -87,10 +88,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: none;
+  margin: none;
+}
+.contact p {
   font-size: 12px;
   line-height: 15.86px;
   font-weight: 700;
   color: white;
+
+  margin-top: 0.3rem;
 }
 .right-arrow {
   width: 9px;
@@ -178,4 +185,444 @@
   background-color: var(--secondary-color);
   width: 50px;
   border-radius: 19%;
+}
+/* Home End */
+/* About Us */
+.About-Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  /* background-color: #e54614; */
+}
+.wrapper-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+.about-content {
+  width: 100%;
+  height: 472px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* about discription left */
+.about-content-left-content {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-content-left-content h2 {
+  line-height: 31.7px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.about-content-left-content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.7px;
+  width: 81%;
+}
+.about-content-left-content p {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 93%;
+}
+.contact-info3 {
+  width: 210px;
+  height: 50px;
+  background-color: var(--color);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  /* gap: 5px; */
+  border: 1px solid var(--secondary-color);
+}
+.contact3 {
+  width: 160px;
+  height: 38px;
+  background-color: var(--color);
+  color: var(--secondary-color);
+  border-radius: 19px;
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 21px;
+  font-weight: 700;
+  margin-left: 0.4em;
+}
+
+.arrow-edit {
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
+  margin-left: 0.3em;
+}
+/* about description right  */
+.about-content-right-content {
+  width: 45%;
+  height: 100%;
+  border-radius: 24px;
+  background: url(./Images/Image-6.png) center / cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+  padding: 2em;
+  align-items: center;
+}
+.about-content-right-content::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 24px;
+  z-index: 0;
+}
+.text-layer {
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 90%;
+}
+.text-layer p {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.text-layer h1 {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* about us end */
+/* project section */
+.project-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  /* background-color: navajowhite; */
+}
+/* header */
+.projects-header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects-header h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.contact-info4 {
+  width: 210px;
+  height: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.contact4 {
+  width: 160px;
+  height: 38px;
+  background-color: var(--color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 21px;
+  font-weight: 700;
+  margin-left: 0.4em;
+  border-radius: 19px;
+}
+.arrow-edit2 {
+  color: var(--color);
+  margin-left: 0.5em;
+}
+/* main */
+.projects-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.project-card {
+  width: 363px;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.project-card img {
+  width: 100%;
+  height: 400px;
+}
+.project-discription h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.project-discription p {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+/* project section ends */
+
+/* testimonial section starts  */
+.testimonial-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+.discription {
+  line-height: 45px;
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+}
+.scroll-container {
+  width: 100%;
+  height: 600px;
+  border-radius: 24px;
+  border: 1px solid black;
+  margin-top: 4rem;
+  display: flex;
+  gap: 24px;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  padding: 30px;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.scroll-wrapper {
+  display: flex;
+  gap: 32px;
+}
+.testimonial-cards {
+  width: 387px;
+  height: 93%;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 24px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+.testimonial-cards img {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.testimonial-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+}
+.testimonial-name span {
+  font-weight: 400;
+}
+.testimonial-writeUp {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  width: 93%;
+}
+/* testimonial section ends  */
+
+/* what we do section  */
+.what-we-do-container {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.grid-cardHolder {
+  width: 100%;
+  height: 692px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 4rem;
+}
+.grid-cardWrapper {
+  width: 100%;
+  height: 49%;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-card1 {
+  width: 50%;
+  height: 100%;
+  border-radius: 24px;
+  border: 1px solid #e54614;
+  background-color: rgba(229, 70, 20, 0.15);
+  padding: 24px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.grid-card2 {
+  width: 24%;
+  height: 100%;
+  border-radius: 24px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.grid-card1 h1 {
+  line-height: 63px;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+.grid-card1 p {
+  line-height: 31.72px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.grid-card2 h1 {
+  line-height: 42.3px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.grid-card2 p {
+  font-size: 24px;
+  line-height: 31.72px;
+  font-weight: 400;
+  text-align: center;
+}
+/* what we do section ends  */
+
+/* reach out section starts  */
+.reach-out-container {
+  width: 100%;
+  height: 705px;
+  margin-top: 80px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.color-edit {
+  color: var(--color);
+}
+.reach-out-form {
+  width: 100%;
+  height: 423px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 40px;
+}
+.userinfo {
+  width: 100%;
+  height: 137px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.input-info {
+  width: 45%;
+  width: 100%;
+}
+.form-lebel {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 45px;
+  color: var(--color);
+}
+.input-div {
+  width: 100%;
+  height: 96px;
+  border-radius: 24px;
+  background-color: var(--color);
+  display: flex;
+  align-items: center;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 100%;
+  flex: 1;
+  font-size: 24px;
+  padding-left: 20px;
+}
+.input-message {
+  width: 100%;
+  height: 137px;
+}
+.span-edit {
+  width: 100%;
+}
+.contact5Holder {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contantinfo5 {
+  width: 333px;
+  height: 85px;
+  border-radius: 46.07px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+}
+.contact5 {
+  width: 264px;
+  height: 66px;
+  border-radius: 33.36px;
+  background-color: var(--color);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-edit3 {
+  font-size: 24px;
 }
