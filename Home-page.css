@@ -686,3 +686,310 @@ input {
 }
 
 /* blog section ends  */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.newsletter {
+  background: #e65100;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 278px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.newsletter form {
+  width: 930px;
+  height: 96px;
+  border-radius: 60px;
+  background-color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.newsletter input {
+  padding: 100px;
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+}
+.sub-btn {
+  width: 168px;
+  height: 43px;
+  background-color: var(--primary-color);
+  border-radius: 21.5px;
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+.sub-btn button {
+  width: 133px;
+  height: 33px;
+  border: none;
+  background: #fff;
+  color: #e65100;
+  border-radius: 16.5px;
+  cursor: pointer;
+  margin-left: 0.4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  max-width: 100%;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+.about p {
+  line-height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+.footer-content div {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin: 5px 0;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.socials ul {
+  display: flex;
+  gap: 10px;
+}
+
+.socials ul li {
+  display: inline-block;
+}
+
+.socials ul li a {
+  font-size: 18px;
+}
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .heroContent {
+    width: 100%;
+    margin-top: 2em;
+    padding: 0 1em;
+    text-align: center;
+  }
+
+  .heroContent h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .heroContent p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 2em;
+    padding: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .heroContent p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .contact-info {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .grid-card1,
+  .grid-card2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .footer-content div {
+    min-width: 100%;
+  }
+
+  .blog-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .heroContent p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .footer-content {
+    gap: 10px;
+  }
+
+  .testimonial-container {
+    padding: 10px;
+  }
+}
+
+/* Scroll Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-animation {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+[data-scroll-visible] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button Behaviors */
+button:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Box and Link Hover Effects */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.footer-content ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.grid-card1:hover,
+.grid-card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
